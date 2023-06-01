@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Верстка «RSTech»</title>
+</head>
+
+<body>
+	<div class="rootpage">
+		<div class="rootpage__info">
+			<h1>Верстка «RSTech»</h1>
+			<h2>Готовые страницы:</h2>
+			<ol class="rootpage__list">
+				<li><a target="_blank" href="home.html">Главная</a></li>
+				<li><a target="_blank" href="card.html">Карточка товара</a></li>
+			</ol>
+			<!-- <h2>Попапы:</h2>
+				<ol class="rootpage__list">
+					<li><a target="_blank" href="card.html#callback">Обратная связь</a></li>
+				</ol> -->
+			<!-- <div class="rootpage__tnx">
+					<h2>Спасибо за заказ!</h2>
+					<p>Буду рад (а) хорошему отзыву.</p>
+					<p>Обращайтесь еще!</p>
+				</div> -->
+			<div class="rootpage__contacts">
+				<h2>Мои контакты:</h2>
+				<p>Почта: <a href="mailto:rserzh93@gmail.com">rserzh93@gmail.com</a></p>
+				<p>Телефон: <a href="tel:+79256200857">+7 925 620 0857</a></p>
+			</div>
+			<div class="rootpage__images">
+				<div class="rootpage__image"><picture><source srcset="/" type="image/webp"><img src="/" alt=""></picture></div>
+			</div>
+		</div>
+	</div>
+
+</body>
+<style>
+	@charset "UTF-8";
+	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
+
+	*,
+	*::before,
+	*::after {
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+		box-sizing: border-box;
+	}
+
+	html,
+	body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		min-width: 320px;
+		width: 100%;
+		color: #fff;
+		background-color: #222629;
+	}
+
+	body {
+		font-family: Montserrat;
+		font-size: 100%;
+		line-height: 1;
+		font-size: 1rem;
+	}
+
+	a {
+		text-decoration: underline;
+		color: #fff;
+	}
+
+	a:visited {
+		text-decoration: underline;
+		color: #fff;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	ul li {
+		list-style: none;
+	}
+
+	img {
+		vertical-align: top;
+	}
+
+	.wrapper {
+		width: 100%;
+		min-height: 100%;
+		overflow: hidden;
+	}
+
+	.rootpage {
+		padding: 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	@media (max-width: 767px) {
+		.rootpage {
+			padding: 30px 15px;
+		}
+	}
+
+	h1 {
+		color: #61892F;
+		font-size: 2.5rem;
+		margin: 0px 0px 1.25rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h1 {
+			font-size: 1.85rem;
+			margin: 0px 0px 1.25rem 0px;
+		}
+	}
+
+	h2 {
+		color: #61892F;
+		font-size: 1.25rem;
+		margin: 0px 0px 1rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h2 {
+			font-size: 1.125rem;
+			margin: 0px 0px 1rem 0px;
+		}
+	}
+
+	.rootpage__info {
+		line-height: 140%;
+		margin: 0px 0px 1.5rem 0px;
+	}
+
+	.rootpage__list {
+		margin: 0px 0px 2.25rem 1.25rem;
+	}
+
+	.rootpage__list li:not(:last-child) {
+		margin: 0px 0px 15px 0px;
+	}
+
+	.rootpage__contacts,
+	.rootpage__tnx {
+		padding: 20px 65px;
+		line-height: 140%;
+		min-width: 390px;
+	}
+
+	@media (max-width: 767px) {
+
+		.rootpage__contacts,
+		.rootpage__tnx {
+			padding: 20px;
+		}
+	}
+
+	.rootpage__contacts {
+		background: #474B4F;
+
+	}
+
+	.rootpage__contacts a {
+		color: #fff;
+	}
+
+	.rootpage__tnx {
+		background: #314455;
+	}
+</style>
+
+</html>
